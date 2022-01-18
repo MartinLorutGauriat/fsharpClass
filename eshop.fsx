@@ -8,7 +8,7 @@ type ItemsName =
     | Binks
     | Poney
 
-type ItemPrice =
+type ItemsPrice =
     | DollPrice
     | ToasterPrice
     | StickPrice
@@ -16,12 +16,12 @@ type ItemPrice =
     | PhonePrice
     | PoneyPrice
 
-type Items = ItemsName * ItemPrice
+type Items = ItemsName * ItemsPrice
 
 type Info = 
     | PhoneInfo
 
-type DetailledItems = ItemsName * ItemPrice * Info
+type DetailledItems = ItemsName * ItemsPrice * Info
 
 type Account =
     | Name
@@ -39,3 +39,26 @@ type BasketDisplay =
     | GrandTotal
 
 type Basket = BasketDisplay * BasketButtons 
+
+type Language = 
+    | English
+    | French
+
+type Currency = 
+    | Euro
+    | Dollar
+    | Livre
+
+type Menu = Language * Currency * Basket * Account * ItemsName * ItemsPrice 
+
+type PayButtons = 
+    | Done
+    | Paypal
+
+type CreditCard = 
+    | Number
+    | ExpirationDate
+    | SecurityCode
+
+type Pay = CreditCard * PayButtons
+    
