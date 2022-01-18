@@ -9,7 +9,7 @@ type ItemsName =
     | Poney
 
 type ItemsPrice =
-    | DollPrice
+    | DollPrice 
     | ToasterPrice
     | StickPrice
     | BinksPrice
@@ -34,8 +34,8 @@ type BasketButtons =
 type BasketDisplay = 
     | ItemsName
     | ItemsPrice
-    | Quantity
-    | Total
+    | Quantity 
+    | Total 
     | GrandTotal
 
 type Basket = BasketDisplay * BasketButtons 
@@ -43,6 +43,9 @@ type Basket = BasketDisplay * BasketButtons
 type Language = 
     | English
     | French
+    | Spanish
+    | German
+    | Italian
 
 type Currency = 
     | Euro
