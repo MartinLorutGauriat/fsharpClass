@@ -1,4 +1,4 @@
-# FsharpClass
+# FSharpClass
 
 Exercice from the Unit 7 - Domain Modeling
 
